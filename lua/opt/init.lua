@@ -1,0 +1,5 @@
+require("opt.lualine")
+require("opt.nvim-tree")
+require("opt.telescope")
+require("opt.treesitter")
+require("opt.lsp")
