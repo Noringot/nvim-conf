@@ -44,6 +44,7 @@ return require('packer').startup(function(use)
 	use 'idanarye/breeze.vim'
 	use 'alvan/vim-closetag'
 	use 'ap/vim-css-color'
+	use 'mattn/emmet-vim'
 
 	-----------------------------------------------------------
 	-- CMP
@@ -90,7 +91,6 @@ return require('packer').startup(function(use)
 					require('Comment').setup()
 			end
 	}
-	use 'mattn/emmet-vim'
 	-- Закрывает автоматом скобки
 	use {
 		"windwp/nvim-autopairs",

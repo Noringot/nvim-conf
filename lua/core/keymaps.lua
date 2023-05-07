@@ -1,9 +1,9 @@
 local map = vim.api.nvim_set_keymap
 local default_opts = {noremap = true, silent = true}
-map('n', '<C-c>', '"+y', {})
-map('v', '<C-c>', '"+y', {})
-map('n', '<C-v>', '"+p', {})
-map('v', '<C-v>', '"+p', {})
+-- map('n', '<C-S-c>', '"+y',	default_opts)
+map('v', '<C-c>', '"+y',	default_opts)
+map('n', '<C-S-v>', '"+p',	default_opts)
+map('v', '<C-S-v>', '"+p',	default_opts)
 
 map('i', 'jj', '<Esc>', {noremap=true})
 
@@ -12,8 +12,8 @@ map('', '<down>', ':echoe "Use j"<CR>', {noremap = true, silent = false})
 map('', '<left>', ':echoe "Use h"<CR>', {noremap = true, silent = false})
 map('', '<right>', ':echoe "Use l"<CR>', {noremap = true, silent = false})
 
-map("i", "<S-j>", "<Esc>o", default_opts)
-map("i", "<S-k>", "<Esc>O", default_opts)
+-- map("i", "<C-j>", "<Esc>o", default_opts)
+-- map("i", "<C-k>", "<Esc>O", default_opts)
 
 -- Telescope
 map('n', ',f', ':Telescope find_files<CR>', default_opts)

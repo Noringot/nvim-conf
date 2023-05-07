@@ -33,6 +33,7 @@ local conditions = {
   end,
 }
 
+
 -- Config
 local config = {
   options = {
@@ -48,14 +49,12 @@ local config = {
     },
   },
   sections = {
-    -- these are to remove the defaults
-    lualine_a = {'mode'},
+    lualine_a = { 'mode' },
     lualine_b = {},
-    lualine_y = {},
-    lualine_z = {},
-    -- These will be filled later
     lualine_c = {},
     lualine_x = {},
+    lualine_y = {},
+    lualine_z = {},
   },
   inactive_sections = {
     -- these are to remove the defaults
@@ -184,12 +183,12 @@ ins_right {
   color = { fg = colors.green, gui = 'bold' },
 }
 
-ins_right {
-  'fileformat',
-  fmt = string.upper,
-  icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
-  color = { fg = colors.green, gui = 'bold' },
-}
+-- ins_right {
+--   'fileformat',
+--   fmt = string.upper,
+--   icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
+--   color = { fg = colors.green, gui = 'bold' },
+-- }
 
 ins_right {
   'branch',
