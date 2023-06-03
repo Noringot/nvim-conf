@@ -18,13 +18,6 @@ return require('packer').startup(function(use)
 	-- ПЛАГИНЫ ВНЕШНЕГО ВИДА
 	-----------------------------------------------------------
 	use 'doums/darcula'
-	-- use({
-	-- 	'rose-pine/neovim',
-	-- 	as = 'rose-pine',
-	-- 	config = function()
-	-- 		vim.cmd('colorscheme rose-pine')
-	-- 	end
- --  })
 	use 'kyazdani42/nvim-web-devicons'
 	use 'nvim-lualine/lualine.nvim'
 	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
@@ -35,7 +28,6 @@ return require('packer').startup(function(use)
 	use "nvim-tree/nvim-tree.lua"
 	use 'majutsushi/tagbar'
 	use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', requires = { {'nvim-lua/plenary.nvim'} } }
-	-- use {'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
  	use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
 	-----------------------------------------------------------

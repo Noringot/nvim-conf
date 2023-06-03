@@ -9,6 +9,9 @@ local config = {
   filters = {
     dotfiles = true,
   },
+	git = {
+		ignore = false	
+	}
 }
 
 require("nvim-tree").setup(config)
